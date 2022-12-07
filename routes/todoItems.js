@@ -8,8 +8,9 @@ router.post('/api/item', async (req, res)=>{
   try{
     const newItem = new todoItemsModel({
       id: req.body.id,
-      item: req.body.item,
-      des: req.body.des
+      name: req.body.name,
+      price: req.body.price,
+      image: req.body.image
     })
     //save this item in database
     const saveItem = await newItem.save()

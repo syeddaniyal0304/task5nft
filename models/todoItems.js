@@ -7,13 +7,17 @@ const TodoItemSchema = new mongoose.Schema({
     type:String,
     required: true
   },
-  item:{
+  name:{
     type:String,
     required: true
   },
-  des:{
+  price:{
     type:String,
     required: true
+  },
+  image:{
+    type: String,
+    required:true
   }
 })
 
